@@ -1,6 +1,8 @@
 package com.cydeo.pizzacloud.bootstrap;
 
 import com.cydeo.pizzacloud.enums.Cheese;
+import com.cydeo.pizzacloud.enums.Sauce;
+import com.cydeo.pizzacloud.enums.Topping;
 
 import java.util.Arrays;
 import java.util.List;

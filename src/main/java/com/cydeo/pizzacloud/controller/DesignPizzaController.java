@@ -1,6 +1,7 @@
 package com.cydeo.pizzacloud.controller;
 
 import com.cydeo.pizzacloud.bootstrap.DataGenerator;
+import com.cydeo.pizzacloud.model.Pizza;
 import com.cydeo.pizzacloud.repository.PizzaRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

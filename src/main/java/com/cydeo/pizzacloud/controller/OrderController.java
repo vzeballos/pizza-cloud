@@ -1,5 +1,8 @@
 package com.cydeo.pizzacloud.controller;
 
+import com.cydeo.pizzacloud.exception.PizzaNotFoundException;
+import com.cydeo.pizzacloud.model.Pizza;
+import com.cydeo.pizzacloud.model.PizzaOrder;
 import com.cydeo.pizzacloud.repository.PizzaRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -42,8 +45,10 @@ public class OrderController {
     //TODO
     private Pizza getPizza(UUID pizzaId) {
         // Get the pizza from repository based on it's id
+
         return pizzaRepository.readAll().stream().filter(pizza -> pizza.getId().equals(pizzaId))
                 .findFirst().orElseThrow(() -> new PizzaNotFoundException("Pizza not found!"));
+
     }
 
 }
